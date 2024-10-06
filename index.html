@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>rech</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
+        <!-- Some css are stolen from an html5up template that i couldnt find anymore -->
+	</head>
+    <body>
+        <div class="wrap">
+            <div id="card">
+                <span class="avatar"><img src="avatar.jpg" alt="avatar by qloudpatch"/></span>
+                <h1>rech</h1>
+                <div id="random-quotes" class="quote">also called recharge</div>
+                <div>&nbsp;</div>
+                <ul class="links">
+                    <li><a href="https://bsky.app/profile/rech.ing">Bluesky</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC1XfiEPwbToTvldILJ8sKKA">YouTube</a></li>
+                </ul>
+                
+                
+            </div>
+        </div>
+        <script>
+            let quotes = [
+                "I do many things",
+                "i bought this domain for funny bluesky handle",
+                "retro hardware my beloved",
+                "born in genz but technology boomer",
+                "please give frutiger aero back",
+                "i love windows classic theme",
+                "when can big tech corpo stop tracking us and sell those data",
+                "also called recharge",
+                "im reching so hard",
+                ":3",
+                "see my youtube for my creation",
+                "i hate unity",
+                "honestly i should have a better name",
+                "yea the domain name is funny",
+                "these quotes are not secret\nyou can just take a look at the source code",
+                "CONGRATULATIONS!!!\nYou are the 1,000,000th visitor of this page\nThere's no free iPhone",
+                "im gay for men",
+                "Can't load quote, try again.",
+                "proud linux user",
+                "don't use tiktok and meta products, an advice from me",
+                "yea im from taiwan how could you tell",
+            ];
+            let selectedQuote = quotes[Math.floor(Math.random()*quotes.length)];
+            document.getElementById("random-quotes").innerText = selectedQuote;
+        </script>
+    </body>
+</html>
