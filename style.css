@@ -6,7 +6,7 @@ body {
 		background-position: center center,	bottom center;
         background-size: cover, cover;
 		background-attachment: fixed, fixed;
-
+		font: sans-serif;
 }
 
 a {
@@ -17,6 +17,7 @@ a {
 .quote {
 	font-size: 0.9em;
 	color: #00000080;
+	user-select: none;
 }
 
 ul.links {

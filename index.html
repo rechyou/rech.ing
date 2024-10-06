@@ -17,6 +17,7 @@
                 <ul class="links">
                     <li><a href="https://bsky.app/profile/rech.ing">Bluesky</a></li>
                     <li><a href="https://www.youtube.com/channel/UC1XfiEPwbToTvldILJ8sKKA">YouTube</a></li>
+                    <li>Discord: rech.ing</li>
                 </ul>
                 
                 
@@ -27,7 +28,7 @@
                 "I do many things",
                 "i bought this domain for funny bluesky handle",
                 "retro hardware my beloved",
-                "born in genz but technology boomer",
+                "born genz but technology boomer",
                 "please give frutiger aero back",
                 "i love windows classic theme",
                 "when can big tech corpo stop tracking us and sell those data",
@@ -45,9 +46,25 @@
                 "proud linux user",
                 "don't use tiktok and meta products, an advice from me",
                 "yea im from taiwan how could you tell",
+                "quotes may be updated without notice",
+                "gTLD .fyi costs more so i got .ing instead",
+                "certified professional procrastinator",
+                "if i dont't keep being silly\nthe darkness will consume me",
+                "human anatomy is difficult",
+                "learning blender",
+                "learning to draw",
+                "learning to make games",
+                "i have so many things to learn",
+                "(not)proud ",
+                "welcome to my website",
             ];
-            let selectedQuote = quotes[Math.floor(Math.random()*quotes.length)];
-            document.getElementById("random-quotes").innerText = selectedQuote;
+            let quoteContainer = document.getElementById("random-quotes");
+            function randomQuotes() {
+                let selectedQuote = quotes[Math.floor(Math.random()*quotes.length)];
+                quoteContainer.innerText = selectedQuote;
+            }
+            quoteContainer.addEventListener("click", randomQuotes);
+            randomQuotes();
         </script>
     </body>
 </html>
